@@ -8,7 +8,7 @@ import { ThemeProvider } from '@/components/theme-provider'
 const montserrat = Montserrat({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'John Doe',
+  title: 'Fernando Julian',
 }
 
 export default function RootLayout({
@@ -22,7 +22,7 @@ export default function RootLayout({
         <body className={montserrat.className}>
           <ThemeProvider attribute="class" disableTransitionOnChange>
             <Nav />
-            <div className="text-text dark:text-darkText mx-auto w-[750px] max-w-full px-5 pb-10 pt-28">
+            <div className="mx-auto w-[750px] max-w-full px-5 pb-10 pt-28 text-text dark:text-darkText">
               {children}
             </div>
           </ThemeProvider>
